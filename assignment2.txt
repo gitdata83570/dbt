@@ -1,0 +1,12 @@
+Q1)
+Answer->Cnum
+
+Q2)
+Answer->RATING
+
+Q3)
+Answer->Another word for row -->Tuple,Entity,Opportunity
+        Another word for column-->Attribute,Method,Key
+        
+Q4)
+Answer->Because each row is stored as separate file and Each row is stored in separate part of harddisk.The rows are scattered all over the disk and order of storing is not same as order of insertion,The addresses of each row are not sequential.        
