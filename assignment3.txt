@@ -1,0 +1,5 @@
+Q1)
+Answer-YES ANSI recognize the data type date
+
+Q2)
+Answer-INSERT into SELECT
