@@ -1,503 +1,59 @@
 Q1)
-Answer-kd4_Pratik_83570>select Onum,Cname from ORDERS,CUSTOMERS;
+Answer-kd4_Pratik_83570>select Onum,Cname from ORDERS,CUSTOMERS where ORDERS.cnum=CUSTOMERS.Cnum;
 +------+----------+
 | Onum | Cname    |
 +------+----------+
-| 3001 | Pereira  |
 | 3001 | Cisneros |
-| 3001 | Clemens  |
-| 3001 | Grass    |
-| 3001 | Liu      |
-| 3001 | Giovanni |
-| 3001 | Hoffman  |
-| 3003 | Pereira  |
-| 3003 | Cisneros |
-| 3003 | Clemens  |
-| 3003 | Grass    |
-| 3003 | Liu      |
-| 3003 | Giovanni |
 | 3003 | Hoffman  |
 | 3002 | Pereira  |
-| 3002 | Cisneros |
-| 3002 | Clemens  |
-| 3002 | Grass    |
-| 3002 | Liu      |
-| 3002 | Giovanni |
-| 3002 | Hoffman  |
-| 3005 | Pereira  |
-| 3005 | Cisneros |
-| 3005 | Clemens  |
-| 3005 | Grass    |
 | 3005 | Liu      |
-| 3005 | Giovanni |
-| 3005 | Hoffman  |
-| 3006 | Pereira  |
 | 3006 | Cisneros |
-| 3006 | Clemens  |
-| 3006 | Grass    |
-| 3006 | Liu      |
-| 3006 | Giovanni |
-| 3006 | Hoffman  |
-| 3009 | Pereira  |
-| 3009 | Cisneros |
-| 3009 | Clemens  |
-| 3009 | Grass    |
-| 3009 | Liu      |
 | 3009 | Giovanni |
-| 3009 | Hoffman  |
-| 3007 | Pereira  |
-| 3007 | Cisneros |
-| 3007 | Clemens  |
 | 3007 | Grass    |
-| 3007 | Liu      |
-| 3007 | Giovanni |
-| 3007 | Hoffman  |
-| 3008 | Pereira  |
-| 3008 | Cisneros |
 | 3008 | Clemens  |
-| 3008 | Grass    |
-| 3008 | Liu      |
-| 3008 | Giovanni |
-| 3008 | Hoffman  |
-| 3010 | Pereira  |
-| 3010 | Cisneros |
-| 3010 | Clemens  |
 | 3010 | Grass    |
-| 3010 | Liu      |
-| 3010 | Giovanni |
-| 3010 | Hoffman  |
-| 3011 | Pereira  |
-| 3011 | Cisneros |
 | 3011 | Clemens  |
-| 3011 | Grass    |
-| 3011 | Liu      |
-| 3011 | Giovanni |
-| 3011 | Hoffman  |
 +------+----------+
 
 Q2)
-Answer-kd4_Pratik_83570>select SNAME"Salesperson Name",CNAME"Customers Name",ONUM"Order Number" from SALESPEOPLE,CUSTOMERS,ORDERS;
-+------------------+----------------+--------------+
-| Salesperson Name | Customers Name | Order Number |
-+------------------+----------------+--------------+
-| Peel             | Pereira        |         3001 |
-| Serres           | Pereira        |         3001 |
-| Motika           | Pereira        |         3001 |
-| Rifkin           | Pereira        |         3001 |
-| Axelrod          | Pereira        |         3001 |
-| Peel             | Cisneros       |         3001 |
-| Serres           | Cisneros       |         3001 |
-| Motika           | Cisneros       |         3001 |
-| Rifkin           | Cisneros       |         3001 |
-| Axelrod          | Cisneros       |         3001 |
-| Peel             | Clemens        |         3001 |
-| Serres           | Clemens        |         3001 |
-| Motika           | Clemens        |         3001 |
-| Rifkin           | Clemens        |         3001 |
-| Axelrod          | Clemens        |         3001 |
-| Peel             | Grass          |         3001 |
-| Serres           | Grass          |         3001 |
-| Motika           | Grass          |         3001 |
-| Rifkin           | Grass          |         3001 |
-| Axelrod          | Grass          |         3001 |
-| Peel             | Liu            |         3001 |
-| Serres           | Liu            |         3001 |
-| Motika           | Liu            |         3001 |
-| Rifkin           | Liu            |         3001 |
-| Axelrod          | Liu            |         3001 |
-| Peel             | Giovanni       |         3001 |
-| Serres           | Giovanni       |         3001 |
-| Motika           | Giovanni       |         3001 |
-| Rifkin           | Giovanni       |         3001 |
-| Axelrod          | Giovanni       |         3001 |
-| Peel             | Hoffman        |         3001 |
-| Serres           | Hoffman        |         3001 |
-| Motika           | Hoffman        |         3001 |
-| Rifkin           | Hoffman        |         3001 |
-| Axelrod          | Hoffman        |         3001 |
-| Peel             | Pereira        |         3003 |
-| Serres           | Pereira        |         3003 |
-| Motika           | Pereira        |         3003 |
-| Rifkin           | Pereira        |         3003 |
-| Axelrod          | Pereira        |         3003 |
-| Peel             | Cisneros       |         3003 |
-| Serres           | Cisneros       |         3003 |
-| Motika           | Cisneros       |         3003 |
-| Rifkin           | Cisneros       |         3003 |
-| Axelrod          | Cisneros       |         3003 |
-| Peel             | Clemens        |         3003 |
-| Serres           | Clemens        |         3003 |
-| Motika           | Clemens        |         3003 |
-| Rifkin           | Clemens        |         3003 |
-| Axelrod          | Clemens        |         3003 |
-| Peel             | Grass          |         3003 |
-| Serres           | Grass          |         3003 |
-| Motika           | Grass          |         3003 |
-| Rifkin           | Grass          |         3003 |
-| Axelrod          | Grass          |         3003 |
-| Peel             | Liu            |         3003 |
-| Serres           | Liu            |         3003 |
-| Motika           | Liu            |         3003 |
-| Rifkin           | Liu            |         3003 |
-| Axelrod          | Liu            |         3003 |
-| Peel             | Giovanni       |         3003 |
-| Serres           | Giovanni       |         3003 |
-| Motika           | Giovanni       |         3003 |
-| Rifkin           | Giovanni       |         3003 |
-| Axelrod          | Giovanni       |         3003 |
-| Peel             | Hoffman        |         3003 |
-| Serres           | Hoffman        |         3003 |
-| Motika           | Hoffman        |         3003 |
-| Rifkin           | Hoffman        |         3003 |
-| Axelrod          | Hoffman        |         3003 |
-| Peel             | Pereira        |         3002 |
-| Serres           | Pereira        |         3002 |
-| Motika           | Pereira        |         3002 |
-| Rifkin           | Pereira        |         3002 |
-| Axelrod          | Pereira        |         3002 |
-| Peel             | Cisneros       |         3002 |
-| Serres           | Cisneros       |         3002 |
-| Motika           | Cisneros       |         3002 |
-| Rifkin           | Cisneros       |         3002 |
-| Axelrod          | Cisneros       |         3002 |
-| Peel             | Clemens        |         3002 |
-| Serres           | Clemens        |         3002 |
-| Motika           | Clemens        |         3002 |
-| Rifkin           | Clemens        |         3002 |
-| Axelrod          | Clemens        |         3002 |
-| Peel             | Grass          |         3002 |
-| Serres           | Grass          |         3002 |
-| Motika           | Grass          |         3002 |
-| Rifkin           | Grass          |         3002 |
-| Axelrod          | Grass          |         3002 |
-| Peel             | Liu            |         3002 |
-| Serres           | Liu            |         3002 |
-| Motika           | Liu            |         3002 |
-| Rifkin           | Liu            |         3002 |
-| Axelrod          | Liu            |         3002 |
-| Peel             | Giovanni       |         3002 |
-| Serres           | Giovanni       |         3002 |
-| Motika           | Giovanni       |         3002 |
-| Rifkin           | Giovanni       |         3002 |
-| Axelrod          | Giovanni       |         3002 |
-| Peel             | Hoffman        |         3002 |
-| Serres           | Hoffman        |         3002 |
-| Motika           | Hoffman        |         3002 |
-| Rifkin           | Hoffman        |         3002 |
-| Axelrod          | Hoffman        |         3002 |
-| Peel             | Pereira        |         3005 |
-| Serres           | Pereira        |         3005 |
-| Motika           | Pereira        |         3005 |
-| Rifkin           | Pereira        |         3005 |
-| Axelrod          | Pereira        |         3005 |
-| Peel             | Cisneros       |         3005 |
-| Serres           | Cisneros       |         3005 |
-| Motika           | Cisneros       |         3005 |
-| Rifkin           | Cisneros       |         3005 |
-| Axelrod          | Cisneros       |         3005 |
-| Peel             | Clemens        |         3005 |
-| Serres           | Clemens        |         3005 |
-| Motika           | Clemens        |         3005 |
-| Rifkin           | Clemens        |         3005 |
-| Axelrod          | Clemens        |         3005 |
-| Peel             | Grass          |         3005 |
-| Serres           | Grass          |         3005 |
-| Motika           | Grass          |         3005 |
-| Rifkin           | Grass          |         3005 |
-| Axelrod          | Grass          |         3005 |
-| Peel             | Liu            |         3005 |
-| Serres           | Liu            |         3005 |
-| Motika           | Liu            |         3005 |
-| Rifkin           | Liu            |         3005 |
-| Axelrod          | Liu            |         3005 |
-| Peel             | Giovanni       |         3005 |
-| Serres           | Giovanni       |         3005 |
-| Motika           | Giovanni       |         3005 |
-| Rifkin           | Giovanni       |         3005 |
-| Axelrod          | Giovanni       |         3005 |
-| Peel             | Hoffman        |         3005 |
-| Serres           | Hoffman        |         3005 |
-| Motika           | Hoffman        |         3005 |
-| Rifkin           | Hoffman        |         3005 |
-| Axelrod          | Hoffman        |         3005 |
-| Peel             | Pereira        |         3006 |
-| Serres           | Pereira        |         3006 |
-| Motika           | Pereira        |         3006 |
-| Rifkin           | Pereira        |         3006 |
-| Axelrod          | Pereira        |         3006 |
-| Peel             | Cisneros       |         3006 |
-| Serres           | Cisneros       |         3006 |
-| Motika           | Cisneros       |         3006 |
-| Rifkin           | Cisneros       |         3006 |
-| Axelrod          | Cisneros       |         3006 |
-| Peel             | Clemens        |         3006 |
-| Serres           | Clemens        |         3006 |
-| Motika           | Clemens        |         3006 |
-| Rifkin           | Clemens        |         3006 |
-| Axelrod          | Clemens        |         3006 |
-| Peel             | Grass          |         3006 |
-| Serres           | Grass          |         3006 |
-| Motika           | Grass          |         3006 |
-| Rifkin           | Grass          |         3006 |
-| Axelrod          | Grass          |         3006 |
-| Peel             | Liu            |         3006 |
-| Serres           | Liu            |         3006 |
-| Motika           | Liu            |         3006 |
-| Rifkin           | Liu            |         3006 |
-| Axelrod          | Liu            |         3006 |
-| Peel             | Giovanni       |         3006 |
-| Serres           | Giovanni       |         3006 |
-| Motika           | Giovanni       |         3006 |
-| Rifkin           | Giovanni       |         3006 |
-| Axelrod          | Giovanni       |         3006 |
-| Peel             | Hoffman        |         3006 |
-| Serres           | Hoffman        |         3006 |
-| Motika           | Hoffman        |         3006 |
-| Rifkin           | Hoffman        |         3006 |
-| Axelrod          | Hoffman        |         3006 |
-| Peel             | Pereira        |         3009 |
-| Serres           | Pereira        |         3009 |
-| Motika           | Pereira        |         3009 |
-| Rifkin           | Pereira        |         3009 |
-| Axelrod          | Pereira        |         3009 |
-| Peel             | Cisneros       |         3009 |
-| Serres           | Cisneros       |         3009 |
-| Motika           | Cisneros       |         3009 |
-| Rifkin           | Cisneros       |         3009 |
-| Axelrod          | Cisneros       |         3009 |
-| Peel             | Clemens        |         3009 |
-| Serres           | Clemens        |         3009 |
-| Motika           | Clemens        |         3009 |
-| Rifkin           | Clemens        |         3009 |
-| Axelrod          | Clemens        |         3009 |
-| Peel             | Grass          |         3009 |
-| Serres           | Grass          |         3009 |
-| Motika           | Grass          |         3009 |
-| Rifkin           | Grass          |         3009 |
-| Axelrod          | Grass          |         3009 |
-| Peel             | Liu            |         3009 |
-| Serres           | Liu            |         3009 |
-| Motika           | Liu            |         3009 |
-| Rifkin           | Liu            |         3009 |
-| Axelrod          | Liu            |         3009 |
-| Peel             | Giovanni       |         3009 |
-| Serres           | Giovanni       |         3009 |
-| Motika           | Giovanni       |         3009 |
-| Rifkin           | Giovanni       |         3009 |
-| Axelrod          | Giovanni       |         3009 |
-| Peel             | Hoffman        |         3009 |
-| Serres           | Hoffman        |         3009 |
-| Motika           | Hoffman        |         3009 |
-| Rifkin           | Hoffman        |         3009 |
-| Axelrod          | Hoffman        |         3009 |
-| Peel             | Pereira        |         3007 |
-| Serres           | Pereira        |         3007 |
-| Motika           | Pereira        |         3007 |
-| Rifkin           | Pereira        |         3007 |
-| Axelrod          | Pereira        |         3007 |
-| Peel             | Cisneros       |         3007 |
-| Serres           | Cisneros       |         3007 |
-| Motika           | Cisneros       |         3007 |
-| Rifkin           | Cisneros       |         3007 |
-| Axelrod          | Cisneros       |         3007 |
-| Peel             | Clemens        |         3007 |
-| Serres           | Clemens        |         3007 |
-| Motika           | Clemens        |         3007 |
-| Rifkin           | Clemens        |         3007 |
-| Axelrod          | Clemens        |         3007 |
-| Peel             | Grass          |         3007 |
-| Serres           | Grass          |         3007 |
-| Motika           | Grass          |         3007 |
-| Rifkin           | Grass          |         3007 |
-| Axelrod          | Grass          |         3007 |
-| Peel             | Liu            |         3007 |
-| Serres           | Liu            |         3007 |
-| Motika           | Liu            |         3007 |
-| Rifkin           | Liu            |         3007 |
-| Axelrod          | Liu            |         3007 |
-| Peel             | Giovanni       |         3007 |
-| Serres           | Giovanni       |         3007 |
-| Motika           | Giovanni       |         3007 |
-| Rifkin           | Giovanni       |         3007 |
-| Axelrod          | Giovanni       |         3007 |
-| Peel             | Hoffman        |         3007 |
-| Serres           | Hoffman        |         3007 |
-| Motika           | Hoffman        |         3007 |
-| Rifkin           | Hoffman        |         3007 |
-| Axelrod          | Hoffman        |         3007 |
-| Peel             | Pereira        |         3008 |
-| Serres           | Pereira        |         3008 |
-| Motika           | Pereira        |         3008 |
-| Rifkin           | Pereira        |         3008 |
-| Axelrod          | Pereira        |         3008 |
-| Peel             | Cisneros       |         3008 |
-| Serres           | Cisneros       |         3008 |
-| Motika           | Cisneros       |         3008 |
-| Rifkin           | Cisneros       |         3008 |
-| Axelrod          | Cisneros       |         3008 |
-| Peel             | Clemens        |         3008 |
-| Serres           | Clemens        |         3008 |
-| Motika           | Clemens        |         3008 |
-| Rifkin           | Clemens        |         3008 |
-| Axelrod          | Clemens        |         3008 |
-| Peel             | Grass          |         3008 |
-| Serres           | Grass          |         3008 |
-| Motika           | Grass          |         3008 |
-| Rifkin           | Grass          |         3008 |
-| Axelrod          | Grass          |         3008 |
-| Peel             | Liu            |         3008 |
-| Serres           | Liu            |         3008 |
-| Motika           | Liu            |         3008 |
-| Rifkin           | Liu            |         3008 |
-| Axelrod          | Liu            |         3008 |
-| Peel             | Giovanni       |         3008 |
-| Serres           | Giovanni       |         3008 |
-| Motika           | Giovanni       |         3008 |
-| Rifkin           | Giovanni       |         3008 |
-| Axelrod          | Giovanni       |         3008 |
-| Peel             | Hoffman        |         3008 |
-| Serres           | Hoffman        |         3008 |
-| Motika           | Hoffman        |         3008 |
-| Rifkin           | Hoffman        |         3008 |
-| Axelrod          | Hoffman        |         3008 |
-| Peel             | Pereira        |         3010 |
-| Serres           | Pereira        |         3010 |
-| Motika           | Pereira        |         3010 |
-| Rifkin           | Pereira        |         3010 |
-| Axelrod          | Pereira        |         3010 |
-| Peel             | Cisneros       |         3010 |
-| Serres           | Cisneros       |         3010 |
-| Motika           | Cisneros       |         3010 |
-| Rifkin           | Cisneros       |         3010 |
-| Axelrod          | Cisneros       |         3010 |
-| Peel             | Clemens        |         3010 |
-| Serres           | Clemens        |         3010 |
-| Motika           | Clemens        |         3010 |
-| Rifkin           | Clemens        |         3010 |
-| Axelrod          | Clemens        |         3010 |
-| Peel             | Grass          |         3010 |
-| Serres           | Grass          |         3010 |
-| Motika           | Grass          |         3010 |
-| Rifkin           | Grass          |         3010 |
-| Axelrod          | Grass          |         3010 |
-| Peel             | Liu            |         3010 |
-| Serres           | Liu            |         3010 |
-| Motika           | Liu            |         3010 |
-| Rifkin           | Liu            |         3010 |
-| Axelrod          | Liu            |         3010 |
-| Peel             | Giovanni       |         3010 |
-| Serres           | Giovanni       |         3010 |
-| Motika           | Giovanni       |         3010 |
-| Rifkin           | Giovanni       |         3010 |
-| Axelrod          | Giovanni       |         3010 |
-| Peel             | Hoffman        |         3010 |
-| Serres           | Hoffman        |         3010 |
-| Motika           | Hoffman        |         3010 |
-| Rifkin           | Hoffman        |         3010 |
-| Axelrod          | Hoffman        |         3010 |
-| Peel             | Pereira        |         3011 |
-| Serres           | Pereira        |         3011 |
-| Motika           | Pereira        |         3011 |
-| Rifkin           | Pereira        |         3011 |
-| Axelrod          | Pereira        |         3011 |
-| Peel             | Cisneros       |         3011 |
-| Serres           | Cisneros       |         3011 |
-| Motika           | Cisneros       |         3011 |
-| Rifkin           | Cisneros       |         3011 |
-| Axelrod          | Cisneros       |         3011 |
-| Peel             | Clemens        |         3011 |
-| Serres           | Clemens        |         3011 |
-| Motika           | Clemens        |         3011 |
-| Rifkin           | Clemens        |         3011 |
-| Axelrod          | Clemens        |         3011 |
-| Peel             | Grass          |         3011 |
-| Serres           | Grass          |         3011 |
-| Motika           | Grass          |         3011 |
-| Rifkin           | Grass          |         3011 |
-| Axelrod          | Grass          |         3011 |
-| Peel             | Liu            |         3011 |
-| Serres           | Liu            |         3011 |
-| Motika           | Liu            |         3011 |
-| Rifkin           | Liu            |         3011 |
-| Axelrod          | Liu            |         3011 |
-| Peel             | Giovanni       |         3011 |
-| Serres           | Giovanni       |         3011 |
-| Motika           | Giovanni       |         3011 |
-| Rifkin           | Giovanni       |         3011 |
-| Axelrod          | Giovanni       |         3011 |
-| Peel             | Hoffman        |         3011 |
-| Serres           | Hoffman        |         3011 |
-| Motika           | Hoffman        |         3011 |
-| Rifkin           | Hoffman        |         3011 |
-| Axelrod          | Hoffman        |         3011 |
-+------------------+----------------+--------------+
+Answer-kd4_Pratik_83570>select Sname,Cname,Onum from SALESPEOPLE,CUSTOMERS,ORDERS where SALESPEOPLE.Snum=ORDERS.Snum and CUSTOMERS.Cnum=ORDERS.Cnum and SALESPEOPLE.Snum=CUSTOMERS.Snum;
++---------+----------+------+
+| Sname   | Cname    | Onum |
++---------+----------+------+
+| Rifkin  | Cisneros | 3001 |
+| Peel    | Hoffman  | 3003 |
+| Motika  | Pereira  | 3002 |
+| Serres  | Liu      | 3005 |
+| Rifkin  | Cisneros | 3006 |
+| Axelrod | Giovanni | 3009 |
+| Serres  | Grass    | 3007 |
+| Peel    | Clemens  | 3008 |
+| Serres  | Grass    | 3010 |
+| Peel    | Clemens  | 3011 |
++---------+----------+------+
 
 
 Q3)
-Answer-kd4_Pratik_83570>select CNAME"Customer Name",SNAME"SALESPEOPLE",COMM"Salespersons Rate of Commision" from SALESPEOPLE,CUSTOMERS where COMM>.12;
-+---------------+-------------+--------------------------------+
-| Customer Name | SALESPEOPLE | Salespersons Rate of Commision |
-+---------------+-------------+--------------------------------+
-| Hoffman       | Rifkin      |                           0.15 |
-| Hoffman       | Serres      |                           0.13 |
-| Giovanni      | Rifkin      |                           0.15 |
-| Giovanni      | Serres      |                           0.13 |
-| Liu           | Rifkin      |                           0.15 |
-| Liu           | Serres      |                           0.13 |
-| Grass         | Rifkin      |                           0.15 |
-| Grass         | Serres      |                           0.13 |
-| Clemens       | Rifkin      |                           0.15 |
-| Clemens       | Serres      |                           0.13 |
-| Cisneros      | Rifkin      |                           0.15 |
-| Cisneros      | Serres      |                           0.13 |
-| Pereira       | Rifkin      |                           0.15 |
-| Pereira       | Serres      |                           0.13 |
-+---------------+-------------+--------------------------------+
+Answer-kd4_Pratik_83570>select Cname"Customers Name",Sname"Salespersons Name",Comm from CUSTOMERS,SALESPEOPLE where CUSTOMERS.Snum=SALESPEOPLE.Snum and Comm>.12;
++----------------+-------------------+------+
+| Customers Name | Salespersons Name | Comm |
++----------------+-------------------+------+
+| Liu            | Serres            | 0.13 |
+| Grass          | Serres            | 0.13 |
+| Cisneros       | Rifkin            | 0.15 |
++----------------+-------------------+------+
+
 
 Q4)
-Answer-kd4_Pratik_83570>select Amt,RATING from ORDERS,CUSTOMERS where RATING>100;
-+---------+--------+
-| Amt     | RATING |
-+---------+--------+
-|   18.69 |    300 |
-|   18.69 |    300 |
-|   18.69 |    200 |
-|   18.69 |    200 |
-|  767.19 |    300 |
-|  767.19 |    300 |
-|  767.19 |    200 |
-|  767.19 |    200 |
-| 1900.10 |    300 |
-| 1900.10 |    300 |
-| 1900.10 |    200 |
-| 1900.10 |    200 |
-| 5160.45 |    300 |
-| 5160.45 |    300 |
-| 5160.45 |    200 |
-| 5160.45 |    200 |
-| 1098.16 |    300 |
-| 1098.16 |    300 |
-| 1098.16 |    200 |
-| 1098.16 |    200 |
-| 1713.23 |    300 |
-| 1713.23 |    300 |
-| 1713.23 |    200 |
-| 1713.23 |    200 |
-|   75.75 |    300 |
-|   75.75 |    300 |
-|   75.75 |    200 |
-|   75.75 |    200 |
-| 4723.00 |    300 |
-| 4723.00 |    300 |
-| 4723.00 |    200 |
-| 4723.00 |    200 |
-| 1309.95 |    300 |
-| 1309.95 |    300 |
-| 1309.95 |    200 |
-| 1309.95 |    200 |
-| 9891.88 |    300 |
-| 9891.88 |    300 |
-| 9891.88 |    200 |
-| 9891.88 |    200 |
-+---------+--------+
+Answer-kd4_Pratik_83570>select Comm,Amt,Rating from SALESPEOPLE,ORDERS,CUSTOMERS where SALESPEOPLE.Snum=CUSTOMERS.Snum and CUSTOMERS.Cnum=ORDERS.Cnum and Rating>100;
++------+---------+--------+
+| Comm | Amt     | Rating |
++------+---------+--------+
+| 0.15 |   18.69 |    300 |
+| 0.13 | 5160.45 |    200 |
+| 0.15 | 1098.16 |    300 |
+| 0.10 | 1713.23 |    200 |
+| 0.13 |   75.75 |    300 |
+| 0.13 | 1309.95 |    300 |
++------+---------+--------+
 
