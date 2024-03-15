@@ -1,12 +1,12 @@
 Q1.
 
-kd4_shantanu_83521@localhost>create table Multicust as select *from SALESPEOPLE where Snum 
+kd4_Pratik_83570@localhost>create table Multicust as select *from SALESPEOPLE where Snum 
     -> in (select Snum from CUSTOMERS group by Snum having count(Snum) > 1); 
 Query OK, 2 rows affected, 1 warning (0.98 sec)
 Records: 2  Duplicates: 0  Warnings: 1
 
 
-kd4_shantanu_83521@localhost>select * from Multicust;
+kd4_Pratik_83570@localhost>select * from Multicust;
 +------+--------+--------+------+
 | Snum | Sname  | City   | Comm |
 +------+--------+--------+------+
@@ -19,10 +19,10 @@ kd4_shantanu_83521@localhost>select * from Multicust;
 
 Q2.
 
-kd4_shantanu_83521@localhost>delete from CUSTOMERS where Cnum NOT IN (select abcd.Cnum from (select C1.Cnum from CUSTOMERS C1,ORDERS o1 where C1.Cnum=o1.Cnum)as abcd);
+kd4_Pratik_83570@localhost>delete from CUSTOMERS where Cnum NOT IN (select abcd.Cnum from (select C1.Cnum from CUSTOMERS C1,ORDERS o1 where C1.Cnum=o1.Cnum)as abcd);
 Query OK, 1 row affected (0.18 sec)
 
-kd4_shantanu_83521@localhost>select * from CUSTOMERS;
+kd4_Pratik_83570@localhost>select * from CUSTOMERS;
 +------+----------+----------+--------+------+
 | Cnum | Cname    | City     | Rating | Snum |
 +------+----------+----------+--------+------+
@@ -39,11 +39,11 @@ kd4_shantanu_83521@localhost>select * from CUSTOMERS;
 
 Q3.
 
-kd4_shantanu_83521@localhost>update SALESPEOPLE set Comm=Comm+0.2 where Snum =(select distinct Snum from ORDERS where Amt>3000);
+kd4_Pratik_83570@localhost>update SALESPEOPLE set Comm=Comm+0.2 where Snum =(select distinct Snum from ORDERS where Amt>3000);
 Query OK, 1 row affected (0.09 sec)
 Rows matched: 1  Changed: 1  Warnings: 0
 
-kd4_shantanu_83521@localhost>select * from SALESPEOPLE;
+kd4_Pratik_83570@localhost>select * from SALESPEOPLE;
 +------+---------+-----------+------+
 | Snum | Sname   | City      | Comm |
 +------+---------+-----------+------+

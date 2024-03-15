@@ -1,8 +1,8 @@
 1)
-kd4_Abhishek_84098>insert into SALESPEOPLE(City,Sname,Comm,Snum) values('San Jose','Blanco',null,1100);
+kd4_Pratik_83570>insert into SALESPEOPLE(City,Sname,Comm,Snum) values('San Jose','Blanco',null,1100);
 Query OK, 1 row affected (0.01 sec)
 
-kd4_Abhishek_84098>select * from SALESPEOPLE;
+kd4_Pratik_83570>select * from SALESPEOPLE;
 +------+---------+-----------+------+
 | Snum | Sname   | City      | Comm |
 +------+---------+-----------+------+
@@ -16,7 +16,7 @@ kd4_Abhishek_84098>select * from SALESPEOPLE;
 +------+---------+-----------+------+
 
 2)
-kd4_Abhishek_84098>select * from ORDERS;
+kd4_Pratik_83570>select * from ORDERS;
 +------+---------+------------+------+------+
 | Onum | Amt     | Odate      | Cnum | Snum |
 +------+---------+------------+------+------+
@@ -33,10 +33,10 @@ kd4_Abhishek_84098>select * from ORDERS;
 +------+---------+------------+------+------+
 10 rows in set (0.01 sec)
 
-kd4_Abhishek_84098>delete from ORDERS where Cnum =any(select Cnum from CUSTOMERS where Cname ='Clemens');
+kd4_Pratik_83570>delete from ORDERS where Cnum =any(select Cnum from CUSTOMERS where Cname ='Clemens');
 Query OK, 2 rows affected (0.00 sec)
 
-kd4_Abhishek_84098>select * from ORDERS;
+kd4_Pratik_83570>select * from ORDERS;
 +------+---------+------------+------+------+
 | Onum | Amt     | Odate      | Cnum | Snum |
 +------+---------+------------+------+------+
@@ -52,7 +52,7 @@ kd4_Abhishek_84098>select * from ORDERS;
 8 rows in set (0.00 sec)
 
 3)
-kd4_Abhishek_84098>select * from CUSTOMERS
+kd4_Pratik_83570>select * from CUSTOMERS
     -> ;
 +------+----------+----------+--------+------+
 | Cnum | Cname    | City     | Rating | Snum |
@@ -67,12 +67,12 @@ kd4_Abhishek_84098>select * from CUSTOMERS
 +------+----------+----------+--------+------+
 7 rows in set (0.00 sec)
 
-kd4_Abhishek_84098>update CUSTOMERS 
+kd4_Pratik_83570>update CUSTOMERS 
     -> set Rating = Rating + 100;
 Query OK, 7 rows affected (0.01 sec)
 Rows matched: 7  Changed: 7  Warnings: 0
 
-kd4_Abhishek_84098>select * from CUSTOMERS;
+kd4_Pratik_83570>select * from CUSTOMERS;
 +------+----------+----------+--------+------+
 | Cnum | Cname    | City     | Rating | Snum |
 +------+----------+----------+--------+------+
@@ -87,13 +87,13 @@ kd4_Abhishek_84098>select * from CUSTOMERS;
 
 4)
 
-kd4_Abhishek_84098>UPDATE CUSTOMERS SET Snum=(SELECT Snum FROM SALESPEOPLE WHERE Sname='Motika') WHERE Snum=(SELECT Snum FROM SALESPEOPLE WHERE Sname='Serres');
+kd4_Pratik_83570>UPDATE CUSTOMERS SET Snum=(SELECT Snum FROM SALESPEOPLE WHERE Sname='Motika') WHERE Snum=(SELECT Snum FROM SALESPEOPLE WHERE Sname='Serres');
 Query OK, 3 rows affected (0.01 sec)
 Rows matched: 3  Changed: 3  Warnings: 0
 
-kd4_Abhishek_84098>select * CUSTOMERS;
+kd4_Pratik_83570>select * CUSTOMERS;
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CUSTOMERS' at line 1
-kd4_Abhishek_84098>select * FROM CUSTOMERS;
+kd4_Pratik_83570>select * FROM CUSTOMERS;
 +------+----------+----------+--------+------+
 | Cnum | Cname    | City     | Rating | Snum |
 +------+----------+----------+--------+------+
